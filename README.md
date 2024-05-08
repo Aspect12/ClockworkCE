@@ -3,7 +3,7 @@ As of March 2021, since the relicensing of Clockwork as MIT and the deprecation 
 
 [![All Contributors](https://img.shields.io/badge/all_contributors-15-orange.svg)](#contributors)
 [![HL2RP Hub Discord](https://img.shields.io/discord/1008102295491334154.svg)](https://discord.gg/hyPtDAF)
-[![GitHub issues](https://img.shields.io/github/issues-raw/cloudsixteen/clockwork.svg)](https://github.com/Aspect12/ClockworkCE/issues)
+[![GitHub issues](https://img.shields.io/github/issues-raw/Aspect12/ClockworkCE.svg)](https://github.com/Aspect12/ClockworkCE/issues)
 
 A roleplaying framework developed by Cloud Sixteen for the people.  
 *Clockwork was created by Conna Wiles, also known as kurozael.*
