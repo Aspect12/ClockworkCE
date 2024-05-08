@@ -1,22 +1,12 @@
-# Clockwork is no longer being actively maintained
+## Clockwork: Community Edition
+As of March 2021, since the relicensing of Clockwork as MIT and the deprecation of CloudAuthX, Clockwork is no longer being actively maintained, supported, or developed by Cloud Sixteen. This is a simple fork for managing pull requests.
 
-As of March 2021, since the relicensing of Clockwork as MIT and the deprecation of CloudAuthX, Clockwork is no longer being actively maintained, supported, or developed. Contributors are welcome to fork their own maintaned version of Clockwork, as well as open pull requests.
-
-## Clockwork
 [![All Contributors](https://img.shields.io/badge/all_contributors-15-orange.svg)](#contributors)
-[![Latest Release](https://img.shields.io/github/release/cloudsixteen/clockwork.svg)](https://github.com/CloudSixteen/Clockwork/releases/latest)
-[![Discord](https://img.shields.io/discord/126667779095920640.svg)](https://discord.gg/EEg47Dw)
-[![Open Collective sponsors](https://img.shields.io/opencollective/sponsors/cloudsixteen.svg)](https://opencollective.com/cloudsixteen)
-[![GitHub issues](https://img.shields.io/github/issues-raw/cloudsixteen/clockwork.svg)](https://github.com/cloudsixteen/clockwork/issues)
-  
+[![HL2RP Hub Discord](https://img.shields.io/discord/1008102295491334154.svg)](https://discord.gg/hyPtDAF)
+[![GitHub issues](https://img.shields.io/github/issues-raw/cloudsixteen/clockwork.svg)](https://github.com/Aspect12/ClockworkCE/issues)
+
 A roleplaying framework developed by Cloud Sixteen for the people.  
 *Clockwork was created by Conna Wiles, also known as kurozael.*
-
-## Documentation
-[Cloud Sixteen Wiki](https://wiki.cloudsixteen.com)
-
-## Donations
-[Donate to Cloud Sixteen](https://paypal.me/kurozael)
 
 ## Contributors
 
