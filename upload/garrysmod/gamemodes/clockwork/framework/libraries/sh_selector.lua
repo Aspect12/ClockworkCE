@@ -6,6 +6,8 @@
 	http://cloudsixteen.com/license/clockwork.html
 --]]
 
+if (!Clockwork.datastream) then include("sh_datastream.lua"); end;
+
 local Clockwork = Clockwork;
 local tostring = tostring;
 local Color = Color;
