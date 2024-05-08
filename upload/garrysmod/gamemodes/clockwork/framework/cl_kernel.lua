@@ -97,14 +97,14 @@ function hook.Call(name, gamemode, ...)
 		cwClient = Clockwork.Client;
 	end;
 	
-	local status, value = pcall(cwPlugin.RunHooks, cwPlugin, name, nil, ...);
+	local status, value = xpcall(cwPlugin.RunHooks, debug.traceback, cwPlugin, name, nil, ...);
 	
 	if (!status) then
 		MsgC(Color(255, 100, 0, 255), "[Clockwork] The '"..name.."' hook failed to run.\n"..value.."\n"..value.."\n");
 	end;
 	
 	if (value == nil) then
-		local status, a, b, c = pcall(hook.ClockworkCall, name, gamemode or Clockwork, ...);
+		local status, a, b, c = xpcall(hook.ClockworkCall, debug.traceback, name, gamemode or Clockwork, ...);
 		
 		if (!status) then
 			MsgC(Color(255, 100, 0, 255), "[Clockwork] The '"..name.."' hook failed to run.\n"..a.."\n");
@@ -1981,6 +1981,22 @@ end;
 	@details Called when the Clockwork kernel has loaded.
 --]]
 function Clockwork:ClockworkKernelLoaded() end;
+
+--[[
+	@codebase Client
+	@details Called when the Clockwork schema has loaded.
+--]]
+function Clockwork:ClockworkSchemaLoaded()
+	if (tonumber(Clockwork.kernel:GetVersion()) >= 0.97) then
+		self.directory:AddCategoryPage("HelpCredits", "HelpClockwork", "http://authx.cloudsixteen.com/credits.php", true);
+		self.directory:AddPage("HelpBugsIssues", "http://github.com/CloudSixteen/Clockwork/issues", true);
+		self.directory:AddPage("HelpCloudSixteen", "https://eden.cloudsixteen.com", true);
+	else
+		self.directory:AddCategoryPage("Credits", "Clockwork", "http://authx.cloudsixteen.com/credits.php", true);
+		self.directory:AddPage("Bugs/Issues", "http://github.com/CloudSixteen/Clockwork/issues", true);
+		self.directory:AddPage("Cloud Sixteen", "https://eden.cloudsixteen.com", true);
+	end;
+end;
 
 --[[
 	@codebase Client
